@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My Heroes</span>
+  <span class="spacer"></span>
+  <ul id="menu">
+    <li class="menu-item">
+      <a [routerLink]="'/welcome'" routerLinkActive="active">Welcome</a>
+    </li>
+    <li class="menu-item">
+      <a routerLink="/heroes/all" routerLinkActive="active">Heroes</a>
+    </li>
+    <li class="menu-item">
+      <a routerLink="/heroes/top" routerLinkActive="active">Top Heroes</a>
+    </li>
+  </ul>
+  <button routerLink="/login" routerLinkActive="active" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>person</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
